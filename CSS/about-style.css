@@ -1,0 +1,140 @@
+/*<=============== SECTION 1 ===============>*/
+.section-1 {
+  padding-top: 180px;
+  border-bottom: 1px solid black;
+}
+.slider-text {
+  color: black;
+  text-align: center;
+  margin-block: 7rem;
+}
+.slider-head {
+  letter-spacing: 0.08em;
+  font-size: 64px;
+  line-height: 1.5em;
+}
+.slider-par {
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+/*<=============== SECTION 2 ===============>*/
+.section-2 .row {
+  justify-content: space-between;
+}
+.section-2 .left-row {
+  color: black;
+  border-radius: 1rem;
+  width: 30rem;
+  padding: 6rem 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.section-2 .left-lines {
+  display: flex;
+}
+.section-2 .first-line {
+  border-left: 2px solid #5a5a5a;
+}
+.section-2 .second-line {
+  border-left: 3px solid black;
+  height: 8rem;
+  margin-top: 5rem;
+}
+.section-2 .line-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-2 h2 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.section-2 span {
+  font-size: 24px;
+}
+.section-2 p {
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}
+.section-2 .right-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.section-2 img {
+  width: 30rem;
+  border-radius: 1rem;
+}
+
+/*<=============== SECTION 3 ===============>*/
+.section-3 {
+  height: 60rem;
+  background-image: url("/img/emp.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* position: sticky;
+    top: 0; */
+}
+
+/*<=============== SECTION 4 ===============>*/
+.section-4 {
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding-block: 60px;
+}
+.section-4 .row {
+  justify-content: space-between;
+}
+.section-4 .left-row {
+  color: white;
+  width: 26rem;
+  padding: 6rem 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.section-4 .right-row {
+  display: grid;
+  grid-template-columns: 18rem 18rem;
+  align-items: center;
+}
+.section-4 .icon-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.section-4 img {
+  width: 140px;
+}
+.section-4 .left-lines {
+  display: flex;
+}
+.section-4 .first-line {
+  border-left: 2px solid #5a5a5a;
+}
+.section-4 .second-line {
+  border-left: 3px solid white;
+  height: 8rem;
+  margin-top: 5rem;
+}
+.section-4 .line-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-4 h2 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.section-4 p {
+  font-size: 24px;
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}

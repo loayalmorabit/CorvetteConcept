@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Corvette</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="img/corvette-logo2.svg" />
+    <link rel="stylesheet" href="CSS/main-style.css" />
+    <link rel="stylesheet" href="CSS/cart-style.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a href="index.html" class="nav-logo"
+          ><img src="/img/corvette-logo.svg" alt="" width="240px"
+        /></a>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <a href="collection.html" target="_blank" class="dropbtn">
+                Collection
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="about.html" target="_blank" class="dropbtn">About</a>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <!-- Cart button -->
+            <a href="cart.html" target="_blank"
+              ><img src="/img/cart.svg" alt="" width="18"
+            /></a>
+
+            <!-- Login button -->
+            <div class="login-btn" id="login-btn">
+              <img src="/img/user.svg" alt="" width="18" />
+            </div>
+            <!-- Toggle button -->
+            <div class="nav-toggle" id="nav-toggle">
+              <img src="/img/menu.svg" alt="" width="18" />
+            </div>
+          </div>
+        </div>
+        <!-- Close button -->
+        <div class="nav-close" id="nav-close">
+          <img src="/img/cross.svg" alt="" width="18" />
+        </div>
+      </nav>
+    </header>
+    <!--==================== LOGIN/SIGN UP ====================-->
+    <div class="wrapper" id="wrapper">
+      <div class="form-wrapper">
+        <div class="form-logo">
+          <img src="img/blackLogo.svg" alt="" width="180px" />
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="the-slide login">Login</label>
+            <label for="signup" class="the-slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="" class="login">
+              <div class="field">
+                <input type="email" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass-link">
+                <a href="#" class="login-forgot">Forgot Password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="">Signup now</a>
+              </div>
+            </form>
+            <form action="" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-close" id="login-close">
+          <img src="img/cross.svg" alt="" width="24" />
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="section-1">
+        <div class="container">
+          <div class="window">
+            <div class="order-info">
+              <div class="order-info-content">
+                <h2>Order Summary</h2>
+                <div class="line"></div>
+                <div class="order-table">
+                  <img src="img/car1.avif" alt="" width="140px" />
+                  <div>
+                    <div>1LT Coupe</div>
+                    <div>Color: Red</div>
+                    <div>$980</div>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="order-table">
+                  <img src="img/car1.avif" alt="" width="140px" />
+                  <div>
+                    <div>1LT Coupe</div>
+                    <div>Color: Red</div>
+                    <div>$980</div>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="total">
+                  <div>
+                    <div>VAT 19%</div>
+                    <div>Delivery</div>
+                    <div>TOTAL</div>
+                  </div>
+                  <div>
+                    <div>$68.75</div>
+                    <div>$4.95</div>
+                    <div>$435.55</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="credit-info">
+              <div class="credit-info-content">
+                <p class="dropdown-text">Please select your card:</p>
+                <div class="dropdown" id="card-dropdown">
+                  <div class="dropdown-btn" id="current-card">Visa</div>
+                  <div class="dropdown-select">
+                    <ul>
+                      <li>Master Card</li>
+                      <li>American Express</li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  src="https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png"
+                  height="80"
+                  class="credit-card-image"
+                  id="credit-card-image"
+                />
+                <label for="cnum">Card Number</label>
+                <input class="input-field" type="number" id="cnum" />
+                <label for="holder">Card Holder</label>
+                <input class="input-field" type="text" id="holder" />
+                <label for="exp">Expires</label>
+                <input class="input-field" type="date" id="exp" />
+                <button class="pay-btn">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="first-row col-lg-6">
+            <img src="img/blackLogo.svg" alt="" width="240px" />
+            <p>© by Loay. Powered and secured by Corvette</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="JS/main.js"></script>
+    <script src="JS/cart.js"></script>
+  </body>
+</html>

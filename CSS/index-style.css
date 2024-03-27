@@ -1,0 +1,423 @@
+/*<=============== SECTION 1 ===============>*/
+.section-1 {
+  height: 60rem;
+  background-image: url("/img/1030248.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* position: sticky;
+  top: 0; */
+}
+.slider-text {
+  color: white;
+  text-align: center;
+  margin-block: 7rem;
+}
+.slider-head {
+  letter-spacing: 0.08em;
+  font-size: 64px;
+  line-height: 1.5em;
+}
+.slider-par {
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 1.8em;
+}
+
+/*<=============== SECTION 2 ===============>*/
+.section-2 {
+  background-color: black;
+  padding-top: 240px;
+  box-shadow: 0 -20px 16rem 12rem black;
+  /* position: sticky; */
+}
+.section-2 .row {
+  justify-content: space-between;
+}
+.section-2 .left-row {
+  display: flex;
+  gap: 3rem;
+  width: 22rem;
+}
+.section-2 .left-lines {
+  display: flex;
+}
+.section-2 .first-line {
+  border-left: 2px solid #5a5a5a;
+}
+.section-2 .second-line {
+  border-left: 3px solid white;
+  height: 8rem;
+  margin-top: 5rem;
+}
+.section-2 .line-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-2 h2 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.section-2 p {
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}
+
+/*<=============== SECTION 3 ===============>*/
+.right-row {
+  display: flex;
+  justify-content: center;
+}
+.section-3 .left-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-3 .left-row h3 {
+  letter-spacing: 0.08em;
+  line-height: 1.5em;
+  font-size: 40px;
+}
+.section-3 .left-row p {
+  letter-spacing: 0.08em;
+  line-height: 1.8em;
+  font-size: 16px;
+}
+.section-3 .hover-underline-animation {
+  color: black;
+}
+.section-3 .hover-underline-animation:after {
+  background-color: red;
+}
+/*<=============== SECTION 4 ===============>*/
+.section-4 {
+  background-color: #f2f2f2;
+}
+.section-4 img {
+  width: 50%;
+}
+.section-4 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.section-4 p {
+  text-align: center;
+}
+.section-4 a {
+  color: black;
+  text-decoration: underline !important;
+}
+
+/*<=============== SECTION 5 ===============>*/
+
+/*<=============== SECTION 6 ===============>*/
+.section-6 {
+  background-image: url("/img/1156058.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 9rem;
+  /* position: sticky;
+  top: 0; */
+}
+.section-6 .left-row {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  width: 30rem;
+  padding: 6rem 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.section-6 .left-lines {
+  display: flex;
+}
+.section-6 .first-line {
+  border-left: 2px solid #5a5a5a;
+}
+.section-6 .second-line {
+  border-left: 3px solid white;
+  height: 8rem;
+  margin-top: 5rem;
+}
+.section-6 .line-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-6 h2 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.section-6 p {
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}
+
+/*<=============== SECTION 7 ===============>*/
+.section-7 {
+  padding-block: 240px;
+}
+.section-7 .left-row {
+  display: flex;
+  justify-content: center;
+}
+.section-7 .right-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.section-7 h4 {
+  letter-spacing: 0.08em;
+}
+.section-7 .box-container {
+  display: grid;
+  grid-template-columns: 16rem 16rem;
+}
+.section-7 .icon-box {
+  padding: 32px;
+  color: black;
+}
+.icon-box h1 {
+  letter-spacing: 0.08em;
+}
+.lines {
+  margin-bottom: 20px;
+}
+.line {
+  margin: 0;
+  opacity: 1;
+}
+#first-line {
+  width: 3rem;
+}
+#second-line {
+  width: 10rem;
+}
+.icon {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+
+/*<=============== SECTION 8 ===============>*/
+.section-8 {
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding-block: 60px;
+}
+.section-8 .row {
+  justify-content: space-between;
+}
+.section-8 .left-row {
+  color: white;
+  width: 26rem;
+  padding: 6rem 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.section-8 .right-row {
+  display: grid;
+  grid-template-columns: 18rem 18rem;
+  align-items: center;
+}
+.section-8 .icon-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.section-8 .icon {
+  letter-spacing: 0.16em;
+  line-height: 1.8em;
+  font-size: 14px;
+}
+.section-8 img {
+  width: 140px;
+}
+.section-8 .left-lines {
+  display: flex;
+}
+.section-8 .first-line {
+  border-left: 2px solid #5a5a5a;
+}
+.section-8 .second-line {
+  border-left: 3px solid white;
+  height: 8rem;
+  margin-top: 5rem;
+}
+.section-8 .line-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-8 h2 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.section-8 p {
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}
+
+/*<=============== SECTION 9 ===============>*/
+.section-9 {
+  background-color: black;
+  padding-block: 60px;
+}
+.section-9 .row {
+  justify-content: space-between;
+}
+.section-9 .left-row {
+  color: white;
+  width: 26rem;
+  padding: 6rem 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.section-9 .right-row {
+  color: white;
+  width: 26rem;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+.section-9 .left-lines {
+  display: flex;
+}
+.section-9 .first-line {
+  border-left: 2px solid #5a5a5a;
+}
+.section-9 .second-line {
+  border-left: 3px solid white;
+  height: 8rem;
+  margin-top: 5rem;
+}
+.section-9 .line-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-9 h2 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.section-9 p {
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  display: none;
+  opacity: 1;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fading {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*<=============== RESPONSIVE ===============>*/
+@media screen and (max-width: 425px) {
+  .section-8 .right-row,
+  .box-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider-head,
+  .slider-par {
+    font-size: 24px;
+  }
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

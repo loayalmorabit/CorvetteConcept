@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Corvette</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="img/corvette-logo2.svg" />
+    <link rel="stylesheet" href="CSS/main-style.css" />
+    <link rel="stylesheet" href="CSS/index-style.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a href="index.html" class="nav-logo"
+          ><img src="/img/corvette-logo.svg" alt="" width="240px"
+        /></a>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <a href="collection.html" target="_blank" class="dropbtn">
+                Collection
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="about.html" target="_blank" class="dropbtn">About</a>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <!-- Cart button -->
+            <a href="cart.html" target="_blank"
+              ><img src="/img/cart.svg" alt="" width="18"
+            /></a>
+
+            <!-- Login button -->
+            <div class="login-btn" id="login-btn">
+              <img src="/img/user.svg" alt="" width="18" />
+            </div>
+            <!-- Toggle button -->
+            <div class="nav-toggle" id="nav-toggle">
+              <img src="/img/menu.svg" alt="" width="18" />
+            </div>
+          </div>
+        </div>
+        <!-- Close button -->
+        <div class="nav-close" id="nav-close">
+          <img src="/img/cross.svg" alt="" width="18" />
+        </div>
+      </nav>
+    </header>
+    <!--==================== LOGIN/SIGN UP ====================-->
+    <div class="wrapper" id="wrapper">
+      <div class="form-wrapper">
+        <div class="form-logo">
+          <img src="/img/blackLogo.svg" alt="" width="180px" />
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="the-slide login">Login</label>
+            <label for="signup" class="the-slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="" class="login">
+              <div class="field">
+                <input type="email" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass-link">
+                <a href="#" class="login-forgot">Forgot Password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="">Signup now</a>
+              </div>
+            </form>
+            <form action="" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-close" id="login-close">
+          <img src="/img/cross.svg" alt="" width="24" />
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="section-1">
+        <div class="slider-text">
+          <h1 class="slider-head">THE FUTURE OF SPEED IS HERE</h1>
+          <p class="slider-par">
+            Discover the Fastest experience with Corvette.
+          </p>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <div class="left-lines">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+              </div>
+              <div class="line-text">
+                <h2 class="line-head">VISION</h2>
+                <p class="line-first">
+                  We're Changing the Way the World Thinks About Cars
+                </p>
+                <p class="line-second">
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  It's easy. Just click “Edit Text” or double click me to add
+                  your own content and make changes to the font. I'm a great
+                  place for you to tell a story and let your users know a little
+                  more about you.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="/img/corvette.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <h3>ULTIMATE DRIVING</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                It's easy. Just click “Edit Text” or double click me to add your
+                own content and make changes to the font. I'm a great place for
+                you to tell a story and let your users know a little more about
+                you
+              </p>
+              <a class="cta">
+                <span class="hover-underline-animation">About Us</span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="right-row col-lg-6">
+              <img src="/img/corvette-logo2.svg" alt="" width="50%" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="container">
+          <img src="/img/2024-corvette-concierge-01.svg" alt="" />
+          <p>
+            <span
+              >From discovery through delivery, we are here for you every step
+              of the way. Chat Now, email
+              <a
+                class="email stat-text-link"
+                href="mailto:mailto:corvetteconcierge@chevrolet.com"
+                >corvetteconcierge@chevrolet.com</a
+              >
+              or call
+              <a class="telephone stat-text-link" href="tel:tel:18664243892"
+                >1-866-424-3892</a
+              >
+              to speak to a Concierge or to schedule an appointment. Hours are 8
+              a.m. - 7 p.m. ET, Monday through Friday.</span
+            >
+          </p>
+        </div>
+      </section>
+      <section class="section-5"><div class="container"></div></section>
+      <section class="section-6">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <div class="left-lines">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+              </div>
+              <div class="line-text">
+                <h2 class="line-head">WHY CORVETTE</h2>
+                <p class="line-first">
+                  A different approach, using a new method of manufacturing.
+                </p>
+                <p class="line-second">
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  It's easy. Just click “Edit Text” or double click me to add
+                  your own content and make changes to the font. I'm a great
+                  place for you to tell a story and let your users know a little
+                  more about you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-7">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <img src="/img/Corvette Skull.svg" alt="" width="50%" />
+            </div>
+            <div class="right-row col-lg-6">
+              <h4>Corvette In Numbers</h4>
+              <div class="box-container">
+                <div>
+                  <div class="icon-box">
+                    <h1>200</h1>
+                    <div class="lines">
+                      <hr class="line" id="first-line" />
+                      <hr class="line" id="second-line" />
+                    </div>
+                    <div class="icon">EMPLOYEES</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="icon-box">
+                    <h1>5</h1>
+                    <div class="lines">
+                      <hr class="line" id="first-line" />
+                      <hr class="line" id="second-line" />
+                    </div>
+                    <div class="icon">CORE TEAMS</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="icon-box">
+                    <h1>200M$</h1>
+                    <div class="lines">
+                      <hr class="line" id="first-line" />
+                      <hr class="line" id="second-line" />
+                    </div>
+                    <div class="icon">CAPITAL</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="icon-box">
+                    <h1>326</h1>
+                    <div class="lines">
+                      <hr class="line" id="first-line" />
+                      <hr class="line" id="second-line" />
+                    </div>
+                    <div class="icon">PARTNERS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-8">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <div class="left-lines">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+              </div>
+              <div class="line-text">
+                <h2 class="line-head">INDUSTRY</h2>
+                <p class="line-first">Performance</p>
+                <p class="line-second">
+                  Click here to add your own content and customize the text.
+                  This is a great place to tell a story about your company and
+                  let your users know a little more about the company's history,
+                  the team's background, or any other information you'd like to
+                  share. Just click "Edit Text" to get started.
+                </p>
+              </div>
+            </div>
+            <div class="right-row col-lg-6">
+              <div>
+                <div class="icon-box">
+                  <img src="/img/speed.svg" alt="" />
+                  <div class="icon">8-Speed</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="icon-box">
+                  <img src="/img/suspention.svg" alt="" />
+                  <div class="icon">Magnetic Selective Ride</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="icon-box">
+                  <img src="/img/torque.svg" alt="" />
+                  <div class="icon">470 lb.-ft. of Torque</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="icon-box">
+                  <img src="/img/phone.svg" alt="" />
+                  <div class="icon">Wireless Mobile Charging</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-9">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <div class="left-lines">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+              </div>
+              <div class="line-text">
+                <h2 class="line-head">CAREERS</h2>
+                <p class="line-first">
+                  We're looking for innovative talent to join our team. See all
+                  positions and submit your CV.
+                </p>
+              </div>
+            </div>
+            <div class="right-row col-lg-6">
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fading">
+                  <div class="line-text">
+                    <h2 class="line-head">ELECTRICAL ENGINEER</h2>
+                    <p class="line-first">Damascus, SYRIA</p>
+                    <p class="line-second">
+                      I'm a paragraph. Click here to add your own text and edit
+                      me. It's easy. Just click “Edit Text” or double click me
+                      to add your own content and make changes to the font.
+                    </p>
+                    <button class="cta">
+                      <span class="hover-underline-animation">About Us</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 46 16"
+                      >
+                        <path
+                          id="Path_10"
+                          data-name="Path 10"
+                          d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                          transform="translate(30)"
+                          fill="#ffffff"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mySlides fading">
+                  <div class="line-text">
+                    <h2 class="line-head">AI RESEARCHER</h2>
+                    <p class="line-first">Damascus, SYRIA</p>
+                    <p class="line-second">
+                      I'm a paragraph. Click here to add your own text and edit
+                      me. It's easy. Just click “Edit Text” or double click me
+                      to add your own content and make changes to the font.
+                    </p>
+                    <button class="cta">
+                      <span class="hover-underline-animation">About Us</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 46 16"
+                      >
+                        <path
+                          id="Path_10"
+                          data-name="Path 10"
+                          d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                          transform="translate(30)"
+                          fill="#ffffff"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mySlides fading">
+                  <div class="line-text">
+                    <h2 class="line-head">DEEP LEARNING ENGINEER</h2>
+                    <p class="line-first">Damascus, SYRIA</p>
+                    <p class="line-second">
+                      I'm a paragraph. Click here to add your own text and edit
+                      me. It's easy. Just click “Edit Text” or double click me
+                      to add your own content and make changes to the font.
+                    </p>
+                    <button class="cta">
+                      <span class="hover-underline-animation">About Us</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 46 16"
+                      >
+                        <path
+                          id="Path_10"
+                          data-name="Path 10"
+                          d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                          transform="translate(30)"
+                          fill="#ffffff"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- The dots/circles -->
+              <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="first-row col-lg-6">
+            <img src="/img/blackLogo.svg" alt="" width="240px" />
+            <p>© by Loay. Powered and secured by Corvette</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/index.js"></script>
+  </body>
+</html>

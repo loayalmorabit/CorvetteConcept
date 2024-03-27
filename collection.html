@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Corvette</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="img/corvette-logo2.svg" />
+    <link rel="stylesheet" href="CSS/main-style.css" />
+    <link rel="stylesheet" href="CSS/collection-style.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="cart-outline"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="quality"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"
+        ></path>
+        <path
+          d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="price-tag"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"
+        ></path>
+        <path
+          d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="shield-plus"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+        ></path>
+        <path
+          d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"
+        ></path>
+      </symbol>
+    </svg>
+    <header id="header">
+      <nav class="container">
+        <a href="index.html" class="nav-logo"
+          ><img src="/img/corvette-logo.svg" alt="" width="240px"
+        /></a>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="dropdown">
+              <a href="collection.html" target="_blank" class="dropbtn">
+                Collection
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="about.html" target="_blank" class="dropbtn">About</a>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <!-- Cart button -->
+            <a href="cart.html" target="_blank"
+              ><img src="/img/cart.svg" alt="" width="18"
+            /></a>
+
+            <!-- Login button -->
+            <div class="login-btn" id="login-btn">
+              <img src="/img/user.svg" alt="" width="18" />
+            </div>
+            <!-- Toggle button -->
+            <div class="nav-toggle" id="nav-toggle">
+              <img src="/img/menu.svg" alt="" width="18" />
+            </div>
+          </div>
+        </div>
+        <!-- Close button -->
+        <div class="nav-close" id="nav-close">
+          <img src="/img/cross.svg" alt="" width="18" />
+        </div>
+      </nav>
+    </header>
+    <!--==================== LOGIN/SIGN UP ====================-->
+    <div class="wrapper" id="wrapper">
+      <div class="form-wrapper">
+        <div class="form-logo">
+          <img src="/img/blackLogo.svg" alt="" width="180px" />
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="the-slide login">Login</label>
+            <label for="signup" class="the-slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="" class="login">
+              <div class="field">
+                <input type="email" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass-link">
+                <a href="#" class="login-forgot">Forgot Password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="">Signup now</a>
+              </div>
+            </form>
+            <form action="" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-close" id="login-close">
+          <img src="/img/cross.svg" alt="" width="24" />
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="section-1">
+        <div class="slider">
+          <!-- list Items -->
+          <div class="list">
+            <div class="item active">
+              <img src="image/car9.jpg" />
+              <div class="content">
+                <p>Chevrolet</p>
+                <h2>Corvette C1</h2>
+                <p>
+                  Experience the thrill of the 2024 Chevrolet Corvette Stingray
+                  mid-engine sports car stocked with 495 max available
+                  horsepower.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/car10.jpg" />
+              <div class="content">
+                <p>Chevrolet</p>
+                <h2>Corvette C2</h2>
+                <p>
+                  Chevy changed everything about the Corvette for 2020. The swap
+                  to the mid-engine layout meant it needed to be rethought from
+                  the ground up. One huge stride was made on the interior.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/car11.jpg" />
+              <div class="content">
+                <p>Chevrolet</p>
+                <h2>Corvette C3</h2>
+                <p>
+                  The 2020 Chevrolet Corvette is a revolution in every sense of
+                  the word. Chevy has switched to a mid-engine layout for the
+                  first time in the model's history, and the excitement is
+                  through the roof.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/car12.jpg" />
+              <div class="content">
+                <p>Chevrolet</p>
+                <h2>Engine</h2>
+                <p>
+                  a 6.2L V8 in the Stingray and a 6.7L V8 in the Z06 - and with
+                  either one you will experience the raw power that has made the
+                  Corvette one of the most sought-after high-performance cars.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/car13.jpg" />
+              <div class="content">
+                <p>Chevrolet</p>
+                <h2>SkyBlue</h2>
+                <p>
+                  There's no better performance car value available today than
+                  the Chevy Corvette. It's a shining example of a budget
+                  supercar. No caveats for the interior or engine placement need
+                  be made. It's brilliant from every aspect.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- button arrows -->
+          <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+          <!-- thumbnail -->
+          <div class="thumbnail">
+            <div class="item active">
+              <img src="image/car9.jpg" />
+              <div class="content">Corvette C1</div>
+            </div>
+            <div class="item">
+              <img src="image/car10.jpg" />
+              <div class="content">Corvette C2</div>
+            </div>
+            <div class="item">
+              <img src="image/car11.jpg" />
+              <div class="content">Corvette C3</div>
+            </div>
+            <div class="item">
+              <img src="image/car12.jpg" />
+              <div class="content">Engine</div>
+            </div>
+            <div class="item">
+              <img src="image/car13.jpg" />
+              <div class="content">SkyBlue</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="container">
+          <div class="row">
+            <div class="box-container">
+              <div>
+                <div class="icon-box">
+                  <div class="icon-box-icon">
+                    <svg class="cart-outline">
+                      <use xlink:href="#cart-outline"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-box-content">
+                    <h3>Free delivery</h3>
+                    <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="icon-box">
+                  <div class="icon-box-icon">
+                    <svg class="quality">
+                      <use xlink:href="#quality"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-box-content">
+                    <h3>Quality guarantee</h3>
+                    <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="icon-box">
+                  <div class="icon-box-icon">
+                    <svg class="price-tag">
+                      <use xlink:href="#price-tag"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-box-content">
+                    <h3>Daily offers</h3>
+                    <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="icon-box">
+                  <div class="icon-box-icon">
+                    <svg class="shield-plus">
+                      <use xlink:href="#shield-plus"></use>
+                    </svg>
+                  </div>
+                  <div class="icon-box-content">
+                    <h3>100% secure payment</h3>
+                    <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="container">
+          <h1>Coupe Cars</h1>
+          <div class="row">
+            <div class="box-container">
+              <div class="product-card">
+                <img src="/img/car1.avif" alt="" class="img-fluid" />
+                <div class="card-detail">
+                  <h3>1LT Coupe</h3>
+                  <span>$980</span>
+                </div>
+                <a class="cta">
+                  <span class="hover-underline-animation">ADD TO CART</span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="product-card">
+                <img src="/img/car2.avif" alt="" class="img-fluid" />
+                <div class="card-detail">
+                  <h3>2LT Coupe</h3>
+                  <span>$1100</span>
+                </div>
+                <a class="cta">
+                  <span class="hover-underline-animation">ADD TO CART</span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="product-card">
+                <img src="/img/car3.avif" alt="" class="img-fluid" />
+                <div class="card-detail">
+                  <h3>3LT Coupe</h3>
+                  <span>$780</span>
+                </div>
+                <a class="cta">
+                  <span class="hover-underline-animation">ADD TO CART</span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="container">
+          <h1>Convertible Cars</h1>
+          <div class="row">
+            <div class="box-container">
+              <div class="product-card">
+                <img src="/img/car1.avif" alt="" class="img-fluid" />
+                <div class="card-detail">
+                  <h3>1LT Coupe</h3>
+                  <span>$980</span>
+                </div>
+                <a class="cta">
+                  <span class="hover-underline-animation">ADD TO CART</span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="product-card">
+                <img src="/img/car2.avif" alt="" class="img-fluid" />
+                <div class="card-detail">
+                  <h3>2LT Coupe</h3>
+                  <span>$1100</span>
+                </div>
+                <a class="cta">
+                  <span class="hover-underline-animation">ADD TO CART</span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="product-card">
+                <img src="/img/car3.avif" alt="" class="img-fluid" />
+                <div class="card-detail">
+                  <h3>3LT Coupe</h3>
+                  <span>$780</span>
+                </div>
+                <a class="cta">
+                  <span class="hover-underline-animation">ADD TO CART</span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-5">
+        <div class="container">
+          <img src="/img/Phone2.svg" alt="" width="80px" />
+          <p>
+            The myChevrolet Mobile App remote technology now comes standard on
+            select Chevy vehicles. Access all our remote functions and
+            diagnostic resources for 3 years through the Remote Access Plan.
+          </p>
+          <a class="cta">
+            <span class="hover-underline-animation">Read More</span>
+            <svg
+              id="arrow-horizontal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="10"
+              viewBox="0 0 46 16"
+            >
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="section-6">
+        <div class="container">
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <img src="/img/car7.avif" alt="" class="img-fluid" />
+              <p>
+                Purpose-built to dominate the track, the Corvette Z06 boasts the
+                most powerful naturally aspirated V8 in production.
+              </p>
+            </div>
+            <div class="right-row col-lg-6">
+              <div class="text">
+                <h1>2024 Corvette E-Ray</h1>
+                <div>
+                  <p>STARTING AT: $112,700</p>
+                  <p>AS SHOWN: $133,250</p>
+                </div>
+              </div>
+              <a class="cta">
+                <span class="hover-underline-animation">ADD TO CART</span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="left-row col-lg-6">
+              <img src="/img/car8.avif" alt="" class="img-fluid" />
+              <p>
+                Electrified for the first time with an e-ray AWD system that
+                works in tandem with the engine to give it the fastest 0-60 time
+                ever.
+              </p>
+            </div>
+            <div class="right-row col-lg-6">
+              <div class="text">
+                <h1>2024 Corvette E-Ray</h1>
+                <div>
+                  <p>STARTING AT: $104,900</p>
+                  <p>AS SHOWN: $122,850</p>
+                </div>
+              </div>
+              <a class="cta">
+                <span class="hover-underline-animation">ADD TO CART</span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="subscribe"
+        class="container-grid padding-large position-relative overflow-hidden"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium"
+            >
+              <div class="col-md-6 col-sm-12">
+                <div class="display-header pe-3">
+                  <h2 class="display-7 text-uppercase text-light">
+                    Subscribe Us Now
+                  </h2>
+                  <p>
+                    Get latest news, updates and deals directly mailed to your
+                    inbox.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <form class="subscription-form validate">
+                  <div class="input-group flex-wrap">
+                    <input
+                      class="form-control btn-rounded-none"
+                      type="email"
+                      name="EMAIL"
+                      placeholder="Your email address here"
+                      required=""
+                    />
+                    <button
+                      class="btn btn-medium btn-primary text-uppercase btn-rounded-none"
+                      type="submit"
+                      name="subscribe"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="first-row col-lg-6">
+            <img src="/img/blackLogo.svg" alt="" width="240px" />
+            <p>© by Loay. Powered and secured by Corvette</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/collection.js"></script>
+  </body>
+</html>

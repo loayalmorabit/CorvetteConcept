@@ -1,0 +1,156 @@
+/*<=============== SECTION 1 ===============>*/
+.section-1 {
+  padding-top: 240px;
+}
+.section-1 .container {
+  display: flex;
+  justify-content: center;
+}
+.window {
+  height: 540px;
+  width: 800px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.order-info {
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.order-info h2 {
+  text-align: center;
+}
+.order-table img {
+  object-fit: contain;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #ddd;
+}
+.order-table {
+  display: flex;
+  justify-content: space-around;
+}
+.total {
+  display: flex;
+  justify-content: space-around;
+}
+.credit-info {
+  background: #4488dd;
+  width: 50%;
+  color: #eee;
+  font-size: 0.9rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.dropdown-text {
+  align-items: center;
+}
+.credit-card-image {
+  display: block;
+  max-height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block: 35px;
+}
+.input-field {
+  background: rgba(255, 255, 255, 0.1);
+  line-height: 1.5em;
+  font-size: 20px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.pay-btn {
+  border: none;
+  background: #22b877;
+  line-height: 2em;
+  border-radius: 10px;
+  font-size: 19px;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.pay-btn:hover {
+  background: #22a877;
+  color: #eee;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.dropdown-select.visible {
+  display: block;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-select {
+  position: absolute;
+  background: #77aaee;
+  text-align: left;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 90%;
+  left: 2px;
+  line-height: 2em;
+  margin-top: 2px;
+  box-sizing: border-box;
+}
+
+.dropdown-btn {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.5em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+}
+.dropdown-btn:after {
+  content: "\25BE";
+  right: 8px;
+  position: absolute;
+}
+.dropdown-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+  transition: 0.2s ease;
+}
+.dropdown-select {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .window {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0px;
+  }
+  .order-info {
+    width: 100%;
+    padding-bottom: 100px;
+    border-radius: 0px;
+  }
+  .credit-info {
+    width: 100%;
+    padding-bottom: 100px;
+    border-radius: 0px;
+  }
+  .pay-btn {
+    border-radius: 0px;
+  }
+}
