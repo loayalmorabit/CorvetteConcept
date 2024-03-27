@@ -73,7 +73,7 @@
 /*<=============== SECTION 3 ===============>*/
 .section-3 {
   height: 60rem;
-  background-image: url("/img/emp.webp");
+  background-image: url("../img/emp.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
