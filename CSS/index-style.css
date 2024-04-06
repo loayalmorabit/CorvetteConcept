@@ -1,7 +1,6 @@
 /*<=============== SECTION 1 ===============>*/
 .section-1 {
   height: 60rem;
-  background-image: url("../img/1030248.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -117,7 +116,6 @@
 
 /*<=============== SECTION 6 ===============>*/
 .section-6 {
-  background-image: url("../img/1156058.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

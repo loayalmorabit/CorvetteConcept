@@ -1,3 +1,32 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var lazyBackgrounds = [].slice.call(
+    document.querySelectorAll(".lazy-background")
+  );
+
+  if ("IntersectionObserver" in window) {
+    let lazyBackgroundObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.backgroundImage = `url('${entry.target.dataset.src}')`;
+          lazyBackgroundObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    lazyBackgrounds.forEach(function (lazyBackground) {
+      lazyBackgroundObserver.observe(lazyBackground);
+    });
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    lazyBackgrounds.forEach(function (lazyBackground) {
+      lazyBackground.style.backgroundImage = `url('${lazyBackground.dataset.src}')`;
+    });
+  }
+});
+
 /*<=============== SECTION 9 ===============>*/
 let slideIndex = 1;
 showSlides(slideIndex);
